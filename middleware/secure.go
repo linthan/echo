@@ -3,7 +3,7 @@ package middleware
 import (
 	"fmt"
 
-	"github.com/linthan/echo/v4"
+	"github.com/linthan/echo"
 )
 
 type (

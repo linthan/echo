@@ -13,7 +13,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/linthan/echo/v4"
+	"github.com/linthan/echo"
 )
 
 // TODO: Handle TLS proxy

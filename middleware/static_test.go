@@ -5,7 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/linthan/echo/v4"
+	"github.com/linthan/echo"
 	"github.com/stretchr/testify/assert"
 )
 

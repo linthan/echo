@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"net/http/httputil"
 
-	"github.com/linthan/echo/v4"
+	"github.com/linthan/echo"
 )
 
 func proxyHTTP(t *ProxyTarget, c echo.Context, config ProxyConfig) http.Handler {

@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"github.com/linthan/echo/v4"
+	"github.com/linthan/echo"
 	"github.com/labstack/gommon/random"
 )
 

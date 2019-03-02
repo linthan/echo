@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/linthan/echo/v4"
+	"github.com/linthan/echo"
 )
 
 type (

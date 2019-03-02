@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/linthan/echo/v4"
+	"github.com/linthan/echo"
 	"github.com/labstack/gommon/color"
 	"github.com/valyala/fasttemplate"
 )

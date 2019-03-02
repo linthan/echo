@@ -3,7 +3,7 @@ package middleware
 import (
 	"net/http"
 
-	"github.com/linthan/echo/v4"
+	"github.com/linthan/echo"
 )
 
 // RedirectConfig defines the config for Redirect middleware.
