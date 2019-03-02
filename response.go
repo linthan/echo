@@ -4,6 +4,8 @@ import (
 	"bufio"
 	"net"
 	"net/http"
+
+	"github.com/linthan/echo/codec"
 )
 
 type (
@@ -18,6 +20,8 @@ type (
 		Status      int
 		Size        int64
 		Committed   bool
+		data        interface{}
+		encoder     codec.Encoder
 	}
 )
 
@@ -75,6 +79,24 @@ func (r *Response) Write(b []byte) (n int, err error) {
 		fn()
 	}
 	return
+}
+func (r *Response) SetStatus(status int) {
+	r.Status = status
+}
+func (r *Response) SetData(v interface{}) {
+	r.data = v
+}
+
+func (r *Response) Data() interface{} {
+	return r.data
+}
+
+func (r *Response) SetEncoder(encoder codec.Encoder) {
+	r.encoder = encoder
+}
+
+func (r *Response) Encoder() codec.Encoder {
+	return r.encoder
 }
 
 // Flush implements the http.Flusher interface to allow an HTTP handler to flush

@@ -597,6 +597,7 @@ func (e *Echo) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		e.HTTPErrorHandler(err, c)
 	}
 
+	c.Flush()
 	// Release context
 	e.pool.Put(c)
 }

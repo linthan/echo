@@ -14,6 +14,8 @@ import (
 	"path/filepath"
 	"strings"
 	"sync"
+
+	"github.com/linthan/echo/codec"
 )
 
 type (
@@ -442,15 +444,35 @@ func (c *context) json(code int, i interface{}, indent string) error {
 }
 
 func (c *context) JSON(code int, i interface{}) (err error) {
-	indent := ""
-	if _, pretty := c.QueryParams()["pretty"]; c.echo.Debug || pretty {
-		indent = defaultIndent
+	if c.response.Header().Get(HeaderContentType) == "" {
+		c.response.Header().Set(HeaderContentType, MIMEApplicationJSONCharsetUTF8)
 	}
-	return c.json(code, i, indent)
+	c.response.SetStatus(code)
+	c.response.SetData(i)
+	//pretty := c.QueryBool("_pretty", false)
+	c.response.SetEncoder(codec.NewJSONCodec())
+	return nil
 }
 
 func (c *context) JSONPretty(code int, i interface{}, indent string) (err error) {
 	return c.json(code, i, indent)
+}
+
+func (c *context) Flush() {
+	r := c.response
+	if r.Status == http.StatusNoContent {
+		r.Writer.Header().Del(HeaderContentEncoding)
+	}
+
+	if !r.Committed {
+		r.WriteHeader(r.Status)
+	}
+
+	if r.encoder != nil {
+		r.encoder.Encode(r.Writer, r.data)
+	}
+	f := r.Writer.(http.Flusher)
+	f.Flush()
 }
 
 func (c *context) JSONBlob(code int, b []byte) (err error) {
