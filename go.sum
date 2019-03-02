@@ -7,11 +7,11 @@ github.com/json-iterator/go v1.1.5/go.mod h1:+SdeFBvtyEkXs7REEP0seUULqWtbJapLOCV
 github.com/labstack/echo/v4 v4.0.0/go.mod h1:tZv7nai5buKSg5h/8E6zz4LsD/Dqh9/91Mvs7Z5Zyno=
 github.com/labstack/gommon v0.2.8 h1:JvRqmeZcfrHC5u6uVleB4NxxNbzx6gpbJiQknDbKQu0=
 github.com/labstack/gommon v0.2.8/go.mod h1:/tj9csK2iPSBvn+3NLM9e52usepMtrd5ilFYA+wQNJ4=
-github.com/linthan/echo v3.3.10+incompatible h1:jX+0hPOOZFIrsD5h2RLMxMuKaiw2Nep20PzHwMImCVU=
-github.com/linthan/echo v4.0.0 h1:q1GH+caIXPP7H2StPIdzy/ez9CO0EepqYeUg6vi9SWM=
-github.com/linthan/echo v4.0.0/go.mod h1:tZv7nai5buKSg5h/8E6zz4LsD/Dqh9/91Mvs7Z5Zyno=
-github.com/linthan/echo v4.0.1 h1:BZ01NLU9itg3BDDZf+uYOT1/Ly6mIiVdCSnhwGnc2BI=
-github.com/linthan/echo v4.0.1/go.mod h1:v+X6KloMUGAGYJfqbMur0fkQyB9O3cnO1cWiSRsbjPg=
+github.com/linthan/echo/v4 v3.3.10+incompatible h1:jX+0hPOOZFIrsD5h2RLMxMuKaiw2Nep20PzHwMImCVU=
+github.com/linthan/echo/v4 v4.0.0 h1:q1GH+caIXPP7H2StPIdzy/ez9CO0EepqYeUg6vi9SWM=
+github.com/linthan/echo/v4 v4.0.0/go.mod h1:tZv7nai5buKSg5h/8E6zz4LsD/Dqh9/91Mvs7Z5Zyno=
+github.com/linthan/echo/v4 v4.0.1 h1:BZ01NLU9itg3BDDZf+uYOT1/Ly6mIiVdCSnhwGnc2BI=
+github.com/linthan/echo/v4 v4.0.1/go.mod h1:v+X6KloMUGAGYJfqbMur0fkQyB9O3cnO1cWiSRsbjPg=
 github.com/mattn/go-colorable v0.0.9 h1:UVL0vNpWh04HeJXV0KLcaT7r06gOH2l4OW6ddYRUIY4=
 github.com/mattn/go-colorable v0.0.9/go.mod h1:9vuHe8Xs5qXnSaW/c/ABM9alt+Vo+STaOChaDxuIBZU=
 github.com/mattn/go-colorable v0.1.1 h1:G1f5SKeVxmagw/IyvzvtZE4Gybcc4Tr1tf7I8z0XgOg=

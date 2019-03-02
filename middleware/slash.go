@@ -3,7 +3,7 @@ package middleware
 import (
 	"strings"
 
-	"github.com/linthan/echo"
+	"github.com/linthan/echo/v4"
 )
 
 type (

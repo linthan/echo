@@ -1,8 +1,8 @@
 <a href="https://echo.labstack.com"><img height="80" src="https://cdn.labstack.com/images/echo-logo.svg"></a>
 
-[![Sourcegraph](https://sourcegraph.com/github.com/linthan/echo/-/badge.svg?style=flat-square)](https://sourcegraph.com/github.com/linthan/echo?badge)
-[![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](http://godoc.org/github.com/linthan/echo)
-[![Go Report Card](https://goreportcard.com/badge/github.com/linthan/echo?style=flat-square)](https://goreportcard.com/report/github.com/linthan/echo)
+[![Sourcegraph](https://sourcegraph.com/github.com/linthan/echo/v4/-/badge.svg?style=flat-square)](https://sourcegraph.com/github.com/linthan/echo/v4?badge)
+[![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](http://godoc.org/github.com/linthan/echo/v4)
+[![Go Report Card](https://goreportcard.com/badge/github.com/linthan/echo/v4?style=flat-square)](https://goreportcard.com/report/github.com/linthan/echo/v4)
 [![Build Status](http://img.shields.io/travis/labstack/echo.svg?style=flat-square)](https://travis-ci.org/labstack/echo)
 [![Codecov](https://img.shields.io/codecov/c/github/labstack/echo.svg?style=flat-square)](https://codecov.io/gh/labstack/echo)
 [![Join the chat at https://gitter.im/labstack/echo](https://img.shields.io/badge/gitter-join%20chat-brightgreen.svg?style=flat-square)](https://gitter.im/labstack/echo)
@@ -19,7 +19,7 @@ Therefore a Go version capable of understanding /vN suffixed imports is required
 - 1.10.3+
 - 1.11+
 
-Any of these versions will allow you to import Echo as `github.com/linthan/echo` which is the recommended
+Any of these versions will allow you to import Echo as `github.com/linthan/echo/v4` which is the recommended
 way of using Echo going forward.
 
 For older versions, please use the latest v3 tag.
@@ -58,8 +58,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/linthan/echo"
-	"github.com/linthan/echo/middleware"
+	"github.com/linthan/echo/v4"
+	"github.com/linthan/echo/v4/middleware"
 )
 
 func main() {
@@ -107,8 +107,8 @@ func hello(c echo.Context) error {
 
 - [Vishal Rana](https://github.com/vishr) - Author
 - [Nitin Rana](https://github.com/nr17) - Consultant
-- [Contributors](https://github.com/linthan/echo/graphs/contributors)
+- [Contributors](https://github.com/linthan/echo/v4/graphs/contributors)
 
 ## License
 
-[MIT](https://github.com/linthan/echo/blob/master/LICENSE)
+[MIT](https://github.com/linthan/echo/v4/blob/master/LICENSE)

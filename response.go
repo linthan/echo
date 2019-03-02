@@ -5,7 +5,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/linthan/echo/codec"
+	"github.com/linthan/echo/v4/codec"
 )
 
 type (
